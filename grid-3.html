@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 3</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            /*grid-template-rows: 200px 400px 400px; */
+            grid-template-rows: 1fr 2fr 2fr;
+            gap: 15px;
+        }
+
+        .card {
+            background-color: blueviolet;
+        }
+
+        .type-1 {
+            background-color: gray;
+            height: 100px;
+        }
+
+        .type-2 {
+            background-color: green;
+            height: 20px;
+        }
+
+        .type-3 {
+            grid-row: span 2;
+        }
+
+        .type-4 {
+            grid-column: span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="type-1 card"></div>
+        <div class="type-2 card"></div>
+        <div class="type-2 card"></div>
+        <div class="type-2 card"></div>
+        <div class="type-3 card"></div>
+        <div class="type-4 card"></div>
+        <div class="type-4 card"></div>
+    </div>
+</body>
+</html>
